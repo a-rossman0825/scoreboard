@@ -5,21 +5,19 @@ let away = 0;
 function increaseHome(points) {
   home += points;
   drawHomeScore();
+  if (home >= 30) {
+    alert("Home Team Wins!");
+    reset();
+  }
 };
 
 function increaseAway(points) {
   away += points;
   drawAwayScore();
-};
-
-function drawHomeScore() {
-  let homeScore = document.getElementById("home-score");
-  homeScore.innerText = home;
-};
-
-function drawAwayScore() {
-  let awayScore = document.getElementById("away-score");
-  awayScore.innerText = away;
+  if (away >= 30) {
+    alert("Away Team Wins!");
+    reset();
+  }
 };
 
 function decreaseHome(points) {
@@ -40,6 +38,16 @@ function decreaseAway(points) {
   drawAwayScore();
 }
 
+function drawHomeScore() {
+  let homeScore = document.getElementById("home-score");
+  homeScore.innerText = home;
+};
+
+function drawAwayScore() {
+  let awayScore = document.getElementById("away-score");
+  awayScore.innerText = away;
+};
+
 function reset() {
   home = 0;
   away = 0;
@@ -50,4 +58,5 @@ function reset() {
 function drawScores() {
   drawHomeScore();
   drawAwayScore();
+
 };
