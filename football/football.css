@@ -1,0 +1,17 @@
+.football-bg {
+  background-image: url('../media/football-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 117vh;
+}
+
+.scoreboard-bg {
+  background-color: #152bf476;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content {
+  color: #fff;
+  text-align: center;
+}
