@@ -133,8 +133,9 @@ function updateScore() {
 };
 
 function scoreToText(score) {
-  if (score == 0) 
-    return "L🥚VE";
-    return score.toString();
+  if (score == 0) {
+    return "L🥚VE"; 
+  }
+  return "" + score;
 };
 
