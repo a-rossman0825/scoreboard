@@ -101,10 +101,22 @@ function bigReset() {
 };
 
 function getNextPoint(score) {
-  if (score == 0) return 15;
-  if (score ==15) return 30;
-  if (score == 30) return 40;
-  return 40;
+  switch (score) {
+    case 0:
+      return 15;
+      break;
+    case 15:
+      return 30;
+      break;
+    case 30:
+      return 40;
+      break;
+    case 40:
+      return 40;
+      break;
+    default:
+      return 0;
+  }
 };
 
 function updateScore() {
