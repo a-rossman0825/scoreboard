@@ -43,7 +43,7 @@
   <!--Reset Button-->
   <section>
     <div class="text-end">
-      <button onclick="reset()" class="btn btn-danger me-5 mt-3 fs-5" id="resetButton">
+      <button onclick="reset()" class="btn btn-danger me-5 mt-3 fs-5">
         <i class="mdi mdi-sync"></i>RESET
       </button>
     </div>
@@ -72,36 +72,36 @@
           <div class="row">
             <div class="col-md-6">
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="homePlusSix" onclick="increaseHome(6)">+6</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('home', 6)">+6</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="homePlusOne" onclick="increaseHome(1)">+1</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('home', 1)">+1</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="homePlusTwo" onclick="increaseHome(2)">+2</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('home', 2)">+2</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="homePlusThree" onclick="increaseHome(3)">+3</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('home', 3)">+3</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="homeMinusOne" onclick="decreaseHome(1)">-1</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('home', -1)">-1</button>
               </div>
             </div>
             <div class="col-md-6">
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="awayPlusSix" onclick="increaseAway(6)">+6</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('away', 6)">+6</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="awayPlusOne" onclick="increaseAway(1)">+1</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('away', 1)">+1</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="awayPlusTwo" onclick="increaseAway(2)">+2</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('away', 2)">+2</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="awayPlusThree" onclick="increaseAway(3)">+3</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('away', 3)">+3</button>
               </div>
               <div class="text-center mb-3">
-                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" id="awayMinusOne" onclick="decreaseAway(1)">-1</button>
+                <button class="btn btn-primary btn-lg fw-bold fs-1 px-5" onclick="updateScores('away', -1)">-1</button>
               </div>
             </div>
           </div>
